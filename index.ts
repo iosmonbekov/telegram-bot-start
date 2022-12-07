@@ -6,13 +6,11 @@ const token = "5904011618:AAGMypN7UhMLcaU6s40ZxMMx9c-69c4sOrw"
 const bot = new TelegramBot(token, { polling: true })
 
 // Database: 
-const DB: Database = {}
+const DB: any = {}
 //
 
 bot.setMyCommands([
-    { command: '/info', description: 'Get all todos' },
-    { command: '/new', description: 'Set new todos' },
-    { command: '/reset', description: 'Mark finished todos' },
+    { command: '/myprofile', description: 'Get all todos' },
 ])
 
 let PROMPT: TelegramBot.Message | null = null

@@ -1,16 +1,15 @@
-import TelegramBot from "node-telegram-bot-api"
 
 export interface Database {
-    [key: number]: Data
+    [key: number]: User
 }
 
-export interface Data {
-    message: TelegramBot.Message
-    todos: Todo[]
-}
-
-export interface Todo {
-    id: number
-    text: string
-    state: boolean
+export interface User {
+    chatId: number
+    name?: string
+    age?: number
+    image?: File | string
+    gender?: 'I\'m male' | 'I\'m female'
+    interest?: 'Women' | 'Men' | 'No matter'
+    description?: string
+    city?: string
 }

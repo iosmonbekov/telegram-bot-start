@@ -19,9 +19,7 @@ const bot = new node_telegram_bot_api_1.default(token, { polling: true });
 const DB = {};
 //
 bot.setMyCommands([
-    { command: '/info', description: 'Get all todos' },
-    { command: '/new', description: 'Set new todos' },
-    { command: '/reset', description: 'Mark finished todos' },
+    { command: '/myprofile', description: 'Get all todos' },
 ]);
 let PROMPT = null;
 const FUNCIONALITY = {
